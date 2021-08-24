@@ -49,7 +49,7 @@ class LoginController extends GetxController with ValidationMixin {
   }
 
   navigateToRegisterView() {
-
+    Get.toNamed(Routes.REGISTER);
   }
 
   navigateToHomeView() {
