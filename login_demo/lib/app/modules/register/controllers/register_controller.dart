@@ -57,6 +57,8 @@ class RegisterController extends GetxController with ValidationMixin {
         box.write('password', passwordController.text);
         Get.snackbar("Alert", "User register successfully");
         box.write('home', true);
+        Future.delayed(Duration(seconds: 2))
+            .whenComplete(() => Get.offAllNamed(Routes.HOME));
       }
     }
     registerFormKey.currentState!.save();

@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import 'package:login_demo/app/modules/home/bindings/home_binding.dart';
+import 'package:login_demo/app/modules/home/views/home_view.dart';
 import 'package:login_demo/app/modules/login/bindings/login_binding.dart';
 import 'package:login_demo/app/modules/login/views/login_view.dart';
 import 'package:login_demo/app/modules/register/bindings/register_binding.dart';
@@ -22,6 +24,11 @@ class AppPages {
       name: _Paths.REGISTER,
       page: () => RegisterView(),
       binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: _Paths.HOME,
+      page: () => HomeView(),
+      binding: HomeBinding(),
     ),
   ];
 }

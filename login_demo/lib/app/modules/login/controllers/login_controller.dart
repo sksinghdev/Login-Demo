@@ -53,7 +53,7 @@ class LoginController extends GetxController with ValidationMixin {
   }
 
   navigateToHomeView() {
-
+    Get.offAllNamed(Routes.HOME);
   }
 
   @override
